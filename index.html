@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Morse Code Translator</title>
+</head>
+<body>
+    <section class="main">
+        <h1>Morse Code Translator</h1>
+        <div class="translator">
+            <div class="lang-opt">
+                <p style="width:40%; text-align: center;">English</p>
+                <span id="lang-btn"><i class="fa-solid fa-arrow-right-arrow-left"></i></span>
+                <p style="width:40%; text-align: center;">Morse Code</p>
+            </div>
+            <div class="area">
+                <div class="txtarea">
+                    <textarea name="textcont" id="textcont" placeholder="Write..."></textarea>
+                    <button onclick="submit()"><i class="fa-solid fa-check"></i></button>
+                </div>
+                <div class="showarea"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

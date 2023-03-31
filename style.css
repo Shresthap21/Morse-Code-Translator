@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Source code pro';
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    background: #7ac7ed;
+    height: 90vh;
+    width: 90vw;
+    border-radius: 1.2vw;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    justify-content: space-evenly;
+}
+.main .translator{
+height: 50vh;
+width: clamp(60%, 70vw, 90%);
+}
+.main .translator .lang-opt{
+    margin-inline: auto;
+    width: clamp(30%,70vw, 250px  );
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #ffffff5b;
+    padding: 2px;
+    border-radius: 50px;
+}
+.main .translator .lang-opt #lang-btn{
+    cursor: pointer;
+}
+.main .translator .lang-opt.swapped{
+    flex-direction: row-reverse;
+}
+.area{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.main .translator .area .txtarea{
+    position: relative;
+    height: 90%;
+    width: 49%;
+    word-wrap: normal;
+}
+.main .translator .area .txtarea button{
+    width:25px;
+    height: 25px;
+    border-radius: 50%;
+    border: none;
+    background: rgb(129, 239, 146);
+    position: absolute;
+    bottom: .3rem;
+    right:  .3rem;
+    cursor: pointer;
+
+}
+.main .translator .area .txtarea textarea{
+    height: 100%;
+    width: 100%;
+    resize: none;
+    border-radius: 1vw ;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    line-height:1.5rem;
+
+
+}
+.main .translator .area .txtarea textarea:focus-visible{
+    outline: none;
+}
+.main .translator .area .showarea{
+    background: white;
+    height: 90%;
+    width: 49%;
+    padding: 10px;
+    border-radius: 1vw ;
+    overflow-y: scroll;
+    font-size: 14px;
+    line-height:1.5rem;
+
+}
+::-webkit-scrollbar-thumb{
+    /* width: 10px; */
+    border-radius: 50px;
+    background: #c9c9c9;
+}
+::-webkit-scrollbar{
+    width: 8px;
+}
